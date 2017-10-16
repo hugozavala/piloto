@@ -1,0 +1,42 @@
+<table width="100%" border="1" cellpadding="0" cellspacing="0" bordercolor="#000000">
+
+<tr>
+	<th>CODIGO</th>
+	<th>NOMBRE</th>
+	<th>MARCA</th>
+</tr>
+
+
+<tr>
+	<td rowspan="3" valign="middle" align="center">
+		{% for instrumento in instrumentos  %}
+    		{% cycle '<div class="row">' '' '' %}
+        		{{instrumento.codigo}} <br/>
+    		{% cycle '' '' '</div>' %}
+		{% endfor %}
+	</td>
+</tr>
+
+
+<tr>
+	<td rowspan="3" valign="middle" align="center">
+		{% for instrumento in instrumentos  %}
+    		{% cycle '<div class="row">' '' '' %}
+        		{{ instrumento.nombre }} <br/>
+    		{% cycle '' '' '</div>' %}
+		{% endfor %}
+	</td>
+</tr>
+
+
+<tr>
+	<td rowspan="3" valign="middle" align="center">
+		{% for instrumento in instrumentos  %}
+    		{% cycle '<div class="row">' '' '' %}
+        		{{ instrumento.marca }} <br/>
+    		{% cycle '' '' '</div>' %}
+		{% endfor %}
+	</td>
+</tr>
+
+</table>

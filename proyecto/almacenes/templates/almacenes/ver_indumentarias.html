@@ -1,0 +1,42 @@
+<table width="100%" border="1" cellpadding="0" cellspacing="0" bordercolor="#000000">
+
+<tr>
+	<th>CODIGO</th>
+	<th>NOMBRE</th>
+	<th>TALLA</th>
+</tr>
+
+
+<tr>
+	<td rowspan="3" valign="middle" align="center">
+		{% for indumentaria in indumentarias  %}
+    		{% cycle '<div class="row">' '' '' %}
+        		{{indumentaria.codigo}} <br/>
+    		{% cycle '' '' '</div>' %}
+		{% endfor %}
+	</td>
+</tr>
+
+
+<tr>
+	<td rowspan="3" valign="middle" align="center">
+		{% for indumentaria in indumentarias  %}
+    		{% cycle '<div class="row">' '' '' %}
+        		{{ indumentaria.nombre }} <br/>
+    		{% cycle '' '' '</div>' %}
+		{% endfor %}
+	</td>
+</tr>
+
+
+<tr>
+	<td rowspan="3" valign="middle" align="center">
+		{% for indumentaria in indumentarias  %}
+    		{% cycle '<div class="row">' '' '' %}
+        		{{ indumentaria.talla }} <br/>
+    		{% cycle '' '' '</div>' %}
+		{% endfor %}
+	</td>
+</tr>
+
+</table>

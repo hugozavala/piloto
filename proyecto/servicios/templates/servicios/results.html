@@ -1,0 +1,7 @@
+<h1>{{ servicio.question_text }}</h1>
+
+<ul>
+{% for historialconformidad in servicio.historialconformidad_set.all %}
+    <li>{{ historialconformidad.choice_text }} -- {{ historialconformidad.votes }} vote{{ historialconformidad.votes|pluralize }}</li>
+{% endfor %}
+</ul>

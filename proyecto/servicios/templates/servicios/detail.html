@@ -1,0 +1,12 @@
+<h1>{{ servicio.question_text }}</h1>
+
+{% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
+
+<form action="{% url 'servicios:vote' servicio.id %}" method="post">
+{% csrf_token %}
+{% for historialconformidad in servicio.historialconformidad_set.all %}
+    <input type="radio" name="historialconformidad" id="historialconformidad{{ forloop.counter }}" value="{{ historialconformidad.id }}" />
+    <label for="historialconformidad{{ forloop.counter }}">{{ historialconformidad.choice_text }}</label><br />
+{% endfor %}
+<input type="submit" value="Vote" />
+</form>

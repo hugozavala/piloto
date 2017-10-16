@@ -1,0 +1,172 @@
+<table width="100%" border="1" cellpadding="0" cellspacing="0" bordercolor="#000000">
+
+<tr>
+	<th>DNI</th>
+	<th>1ER NOMBRE</th>
+	<th>2DO NOMBRE</th>
+	<th>1ER APELLIDO</th>
+	<th>2DO APELLIDO</th>
+	<th>EDAD</th>
+	<th>DISTRITO</th>
+	<th>AVENIDA</th>
+	<th>CALLE</th>
+	<th>URBANIZACION</th>
+	<th>MANZANA</th>
+	<th>JIRON</th>
+	<th>LOTE</th>
+	<th>NUM VIVIENDA</th>
+</tr>
+
+
+<tr>
+
+	<td rowspan="14" valign="middle" align="center">
+		{% for tecnico in tecnicos  %}
+    		{% cycle '<div class="row">' '' '' %}
+    			{{tecnico.DNI}} <br/><br/>
+    		{% cycle '' '' '</div>' %}
+		{% endfor %}
+	</td>
+</tr>
+
+
+<tr>
+	<td rowspan="14" valign="middle" align="center">
+		{% for tecnico in tecnicos  %}
+    		{% cycle '<div class="row">' '' '' %}
+         		{{ tecnico.primer_nombre }} <br/><br/>
+    		{% cycle '' '' '</div>' %}
+		{% endfor %}
+	</td>
+</tr>
+
+
+<tr>
+	<td rowspan="14" valign="middle" align="center">
+		{% for tecnico in tecnicos  %}
+    		{% cycle '<div class="row">' '' '' %}
+         		{{ tecnico.segundo_nombre }} <br/><br/>
+    		{% cycle '' '' '</div>' %}
+		{% endfor %}</td>
+</tr>
+
+
+<tr>
+	<td rowspan="14" valign="middle" align="center">
+		{% for tecnico in tecnicos %}
+    		{% cycle '<div class="row">' '' '' %}
+         		{{ tecnico.primer_apellido }} <br/><br/>
+    		{% cycle '' '' '</div>' %}
+		{% endfor %}
+	</td>
+</tr>
+
+
+<tr>
+	<td rowspan="14" valign="middle" align="center">
+		{% for tecnico in tecnicos  %}
+    		{% cycle '<div class="row">' '' '' %}
+         		{{ tecnico.segundo_apellido }} <br/><br/>
+    		{% cycle '' '' '</div>' %}
+		{% endfor %}
+	</td>
+</tr>
+
+
+<tr>
+	<td rowspan="14" valign="middle" align="center">
+		{% for tecnico in tecnicos  %}
+    		{% cycle '<div class="row">' '' '' %}
+         		{{ tecnico.edad }} <br/><br/>
+    		{% cycle '' '' '</div>' %}
+		{% endfor %}
+	</td>
+</tr>
+
+
+<tr>
+	<td rowspan="14" valign="middle" align="center">
+		{% for tecnico in tecnicos  %}
+    		{% cycle '<div class="row">' '' '' %}
+         		{{ tecnico.distrito }} <br/><br/>
+    		{% cycle '' '' '</div>' %}
+		{% endfor %}
+	</td>
+</tr>
+
+<tr>
+	<td rowspan="14" valign="middle" align="center">
+		{% for tecnico in tecnicos  %}
+    		{% cycle '<div class="row">' '' '' %}
+         		{{ tecnico.avenida }} <br/><br/>
+    		{% cycle '' '' '</div>' %}
+		{% endfor %}
+	</td>
+</tr>
+
+<tr>
+	<td rowspan="14" valign="middle" align="center">
+		{% for tecnico in tecnicos  %}
+    		{% cycle '<div class="row">' '' '' %}
+        		{{tecnico.calle}} <br/><br/>
+    		{% cycle '' '' '</div>' %}
+		{% endfor %}
+	</td>
+</tr>
+
+
+<tr>
+	<td rowspan="14" valign="middle" align="center">
+		{% for tecnico in tecnicos  %}
+    		{% cycle '<div class="row">' '' '' %}
+         		{{ tecnico.urbanizacion }} <br/><br/>
+    		{% cycle '' '' '</div>' %}
+		{% endfor %}
+	</td>
+</tr>
+
+
+<tr>
+	<td rowspan="14" valign="middle" align="center">
+		{% for tecnico in tecnicos  %}
+    		{% cycle '<div class="row">' '' '' %}
+         		{{ tecnico.manzana }} <br/><br/>
+    		{% cycle '' '' '</div>' %}
+		{% endfor %}</td>
+</tr>
+
+
+<tr>
+	<td rowspan="14" valign="middle" align="center">
+		{% for tecnico in tecnicos %}
+    		{% cycle '<div class="row">' '' '' %}
+         		{{ tecnico.jiron }} <br/><br/>
+    		{% cycle '' '' '</div>' %}
+		{% endfor %}
+	</td>
+</tr>
+
+
+<tr>
+	<td rowspan="14" valign="middle" align="center">
+		{% for tecnico in tecnicos  %}
+    		{% cycle '<div class="row">' '' '' %}
+         		{{ tecnico.lote }} <br/><br/>
+    		{% cycle '' '' '</div>' %}
+		{% endfor %}
+	</td>
+</tr>
+
+
+<tr>
+	<td rowspan="14" valign="middle" align="center">
+		{% for tecnico in tecnicos  %}
+    		{% cycle '<div class="row">' '' '' %}
+         		{{ tecnico.numero_vivienda }} <br/><br/>
+    		{% cycle '' '' '</div>' %}
+		{% endfor %}
+	</td>
+</tr>
+
+
+</table>

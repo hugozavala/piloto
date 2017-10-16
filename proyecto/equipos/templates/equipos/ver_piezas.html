@@ -1,0 +1,31 @@
+<table width="100%" border="1" cellpadding="0" cellspacing="0" bordercolor="#000000">
+
+<tr>
+	<th>CODIGO</th>
+	<th>DATOS</th>
+</tr>
+
+
+<tr>
+	<td rowspan="2" valign="middle" align="center">
+		{% for pieza in piezas  %}
+    		{% cycle '<div class="row">' '' '' %}
+        		{{pieza.codigo}} <br/>
+    		{% cycle '' '' '</div>' %}
+		{% endfor %}
+	</td>
+</tr>
+
+
+<tr>
+	<td rowspan="2" valign="middle" align="center">
+		{% for pieza in piezas  %}
+    		{% cycle '<div class="row">' '' '' %}
+        		{{ pieza.datos }} <br/>
+    		{% cycle '' '' '</div>' %}
+		{% endfor %}
+	</td>
+</tr>
+
+
+</table>

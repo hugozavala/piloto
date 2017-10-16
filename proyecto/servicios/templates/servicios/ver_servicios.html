@@ -1,0 +1,69 @@
+<table width="100%" border="1" cellpadding="0" cellspacing="0" bordercolor="#000000">
+
+<tr>
+	
+	<th>CODIGO</th>
+	<th>TIPO</th>
+	<th>EQUIPO</th>
+	<th>TECNICO</th>
+	<th>TAREAS</th>
+		
+</tr>
+
+
+<tr>
+	<td rowspan="7" valign="middle" align="center">
+		{% for servicio in servicios  %}
+    		{% cycle '<div class="row">' '' '' %}
+        		{{servicio.codigo}} <br/>
+    		{% cycle '' '' '</div>' %}
+		{% endfor %}
+	</td>
+</tr>
+
+
+<tr>
+	<td rowspan="7" valign="middle" align="center">
+		{% for servicio in servicios  %}
+    		{% cycle '<div class="row">' '' '' %}
+        		{{servicio.tipo_mantenimiento}} <br/>
+    		{% cycle '' '' '</div>' %}
+		{% endfor %}
+	</td>
+</tr>
+
+
+<tr>
+	<td rowspan="7" valign="middle" align="center">
+		{% for servicio in servicios  %}
+    		{% cycle '<div class="row">' '' '' %}
+        		{{servicio.equipo}} <br/>
+    		{% cycle '' '' '</div>' %}
+		{% endfor %}
+	</td>
+</tr>
+
+
+<tr>
+	<td rowspan="7" valign="middle" align="center">
+		{% for servicio in servicios  %}
+    		{% cycle '<div class="row">' '' '' %}
+        		{{servicio.tecnico}} <br/>
+    		{% cycle '' '' '</div>' %}
+		{% endfor %}
+	</td>
+</tr>
+
+
+<tr>
+	<td rowspan="7" valign="middle" align="center">
+		{% for servicio in servicios  %}
+    		{% cycle '<div class="row">' '' '' %}
+        		{{servicio.tareas}} <br/>
+    		{% cycle '' '' '</div>' %}
+		{% endfor %}
+	</td>
+</tr>
+
+
+</table>

@@ -1,0 +1,42 @@
+<table width="100%" border="1" cellpadding="0" cellspacing="0" bordercolor="#000000">
+
+<tr>
+	<th>NOMBRE</th>
+	<th>CARACTERISTICAS</th>
+	<th>CODIGO DE PIEZA</th>
+</tr>
+
+
+<tr>
+	<td rowspan="3" valign="middle" align="center">
+		{% for parte in partes  %}
+    		{% cycle '<div class="row">' '' '' %}
+        		{{parte.nombre}} <br/>
+    		{% cycle '' '' '</div>' %}
+		{% endfor %}
+	</td>
+</tr>
+
+
+<tr>
+	<td rowspan="3" valign="middle" align="center">
+		{% for parte in partes  %}
+    		{% cycle '<div class="row">' '' '' %}
+        		{{ parte.caracteristicas }} <br/>
+    		{% cycle '' '' '</div>' %}
+		{% endfor %}
+	</td>
+</tr>
+
+
+<tr>
+	<td rowspan="3" valign="middle" align="center">
+		{% for parte in partes  %}
+    		{% cycle '<div class="row">' '' '' %}
+        		{{ parte.pieza }} <br/>
+    		{% cycle '' '' '</div>' %}
+		{% endfor %}
+	</td>
+</tr>
+
+</table>

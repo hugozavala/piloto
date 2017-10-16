@@ -1,0 +1,45 @@
+<table width="100%" border="1" cellpadding="0" cellspacing="0" bordercolor="#000000">
+
+<tr>
+	<th>CODIGO</th>
+	<th>NOMBRE</th>
+	<th>PEDIDO ALMACEN</th>
+	
+</tr>
+
+
+<tr>
+	<td rowspan="4" valign="middle" align="center">
+		{% for almacen in almacenes  %}
+    		{% cycle '<div class="row">' '' '' %}
+        		{{almacen.codigo}} <br/>
+    		{% cycle '' '' '</div>' %}
+		{% endfor %}
+	</td>
+</tr>
+
+
+<tr>
+	<td rowspan="4" valign="middle" align="center">
+		{% for almacen in almacenes  %}
+    		{% cycle '<div class="row">' '' '' %}
+        		{{ almacen.nombre }} <br/>
+    		{% cycle '' '' '</div>' %}
+		{% endfor %}
+	</td>
+</tr>
+
+
+<tr>
+	<td rowspan="4" valign="middle" align="center">
+		{% for almacen in almacenes  %}
+    		{% cycle '<div class="row">' '' '' %}
+        		{{ almacen.pedido_almacen }} <br/>
+    		{% cycle '' '' '</div>' %}
+		{% endfor %}
+	
+	</td>
+</tr>
+
+
+</table>
